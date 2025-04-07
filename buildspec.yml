@@ -3,11 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
+      - echo Entering src directory...
+      - cd src
       - npm install
   build:
     commands:
-      - echo Running build...
+      - cd src
       - npm run build
 
 artifacts:
